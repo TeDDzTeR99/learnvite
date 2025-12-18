@@ -4,18 +4,13 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <link rel="stylesheet" href="./src/style.scss" />
+        <link rel="stylesheet" href="./src/styles.scss" />
         <script type="module" src="./src/index.js"></script>
     </head>
     <body>
-        <div class="tabs">
-          <ul>
-            <li class="is-active"><a href="/">Home</a></li>
-            <li href="/about.njk">About</a></li>
-          </ul>
-        </div>
+        {% include 'src/pages/partials/nav.njk' %}
         <div class="container content">
-            {% block content%}
+            {% block content %}
             {% endblock %}
         </div>
     </body>
