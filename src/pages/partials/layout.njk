@@ -8,6 +8,15 @@
         <script type="module" src="./src/index.js"></script>
     </head>
     <body>
-        <h1>LearnVite!!!!!</h1>
+        <div class="tabs">
+          <ul>
+            <li class="is-active"><a href="/">Home</a></li>
+            <li href="/about.njk">About</a></li>
+          </ul>
+        </div>
+        <div class="container content">
+            {% block content%}
+            {% endblock %}
+        </div>
     </body>
 </html>

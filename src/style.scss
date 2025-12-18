@@ -1,5 +1,1 @@
-@use "sass:color";
-$bgcolor: teal;
-body {
-    background-color: color.scale($bgcolor, $lightness: 30%);
-}
+@use "bulma/sass" with($primary: cyan);
